@@ -1,0 +1,2 @@
+# android_device_huawei_hi6250_PRA-LX1
+android_device_huawei_hi6250_PRA-LX1
