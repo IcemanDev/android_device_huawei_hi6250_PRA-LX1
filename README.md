@@ -6,16 +6,16 @@ We recommend compiling TWRP with LineageOS
 
 Download the source code (15.1 = android 8.1) (16.0 = android 9.0):
 
-cd ~/your_folder_lineage
-sudo repo init -u https://github.com/LineageOS/android.git -b lineage-15.1
-sudo repo sync
+- cd ~/your_folder_lineage
+- sudo repo init -u https://github.com/LineageOS/android.git -b lineage-15.1
+- sudo repo sync
 
 Set the following parameters (go to the lineage folder):
 
-cd ~/your_folder_lineage
-export USE_CCACHE=1
-prebuilts/misc/linux-x86/ccache/ccache -M 50.0G
-export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4096m"
+- cd ~/your_folder_lineage
+- export USE_CCACHE=1
+- prebuilts/misc/linux-x86/ccache/ccache -M 50.0G
+- export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4096m"
 
 IMPORTANT!
 - replace the bootable/recovery folder with the suitable TWRP one and rename it bootable/recovery-twrp
