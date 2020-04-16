@@ -26,7 +26,7 @@ IMPORTANT!
 	with
 	
 	resource_files := $(call find-files-in-subdirs, bootable/recovery-twrp, \
-	
+
 
 - install your_folder_lineage/external/busybox (if not present)
 - in the BoardConfig.mk add the flags (if not present):
