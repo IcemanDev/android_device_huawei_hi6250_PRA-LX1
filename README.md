@@ -30,8 +30,8 @@ IMPORTANT!
 	RECOVERY_VARIANT := twrp
 	
 To compile the twrp:
-# build/envsetup.sh
-# lunch (and select the option that interests you)
-# export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL=C && mka adbd recoveryimage
+- build/envsetup.sh
+- lunch (and select the option that interests you)
+- export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL=C && mka adbd recoveryimage
 
 Greetings and good work! IceMan.
