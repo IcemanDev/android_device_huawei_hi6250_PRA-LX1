@@ -20,8 +20,9 @@ Set the following parameters (go to the lineage folder):
 IMPORTANT!
 - replace the bootable/recovery folder with the suitable TWRP one and rename it bootable/recovery-twrp
 - in the bootable/recovery-twrp/tests/Android.mk file, replace:
+
 	resource_files := $(call find-files-in-subdirs, bootable/recovery, \
-	con
+	with
 	resource_files := $(call find-files-in-subdirs, bootable/recovery-twrp, \
 	
 - install your_folder_lineage/external/busybox (if not present)
