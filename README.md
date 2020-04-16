@@ -22,12 +22,16 @@ IMPORTANT!
 - in the bootable/recovery-twrp/tests/Android.mk file, replace:
 
 	resource_files := $(call find-files-in-subdirs, bootable/recovery, \
+	
 	with
+	
 	resource_files := $(call find-files-in-subdirs, bootable/recovery-twrp, \
 	
 - install your_folder_lineage/external/busybox (if not present)
 - in the BoardConfig.mk add the flags (if not present):
+	
 	BOARD_KERNEL_IMAGE_NAME := Image
+	
 	RECOVERY_VARIANT := twrp
 	
 To compile the twrp:
