@@ -37,7 +37,7 @@ IMPORTANT!
 	
 To compile the twrp:
 - cd ~/your_folder_lineage
-- build/envsetup.sh
+- . build/envsetup.sh
 - lunch (and select the option that interests you)
 - export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL=C && mka adbd recoveryimage
 
