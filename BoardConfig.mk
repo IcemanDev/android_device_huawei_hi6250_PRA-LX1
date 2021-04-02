@@ -82,8 +82,6 @@ TW_EXCLUDE_TWRPAPP := true
 # Use ro.product.model
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
-# CUSTOMIZATION by IceMan
-
 # View button bootloader
 TW_NO_REBOOT_BOOTLOADER := false
 
