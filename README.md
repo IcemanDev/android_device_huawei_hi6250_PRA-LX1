@@ -2,19 +2,23 @@
 TWRP device tree for  P8 Lite 2017 (PRA LX1).
 This device tree has FBE decryption support.
 
-We recommend compiling TWRP with LineageOS
+We recommend compiling TWRP with LineageOS or minimal manifest twrp
 
 Download the source code example: (15.1 = android 8.1) (16.0 = android 9.0):
 
 cd ~/your_folder_lineage
+
 sudo repo init -u https://github.com/LineageOS/android.git -b lineage-15.1
+
 sudo repo sync
 
 or
 
 cd ~/your_folder_omni
+
 sudo repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
-sudo repo sync
+s
+udo repo sync
 
 Set the following parameters (go to the lineage folder):
 
