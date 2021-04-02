@@ -19,8 +19,8 @@ or
 cd ~/your_folder_omni
 
 sudo repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
-s
-udo repo sync
+
+sudo repo sync
 
 Set the following parameters (go to the lineage folder):
 
@@ -33,12 +33,15 @@ prebuilts/misc/linux-x86/ccache/ccache -M 50.0G
 export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4096m"
 
 IMPORTANT!
+
 - replace the bootable/recovery folder with the suitable TWRP one and rename it bootable/recovery-twrp
 
 - in the bootable/recovery-twrp/tests/Android.mk file, replace:
 	
 	resource_files := $(call find-files-in-subdirs, bootable/recovery, \
+	
 	with
+	
 	resource_files := $(call find-files-in-subdirs, bootable/recovery-twrp, \
 	
 - install your_folder_lineage/external/busybox (if not present)
