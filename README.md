@@ -4,10 +4,16 @@ This device tree has FBE decryption support.
 
 We recommend compiling TWRP with LineageOS
 
-Download the source code (15.1 = android 8.1) (16.0 = android 9.0):
+Download the source code example: (15.1 = android 8.1) (16.0 = android 9.0):
 
 cd ~/your_folder_lineage
 sudo repo init -u https://github.com/LineageOS/android.git -b lineage-15.1
+sudo repo sync
+
+or
+
+cd ~/your_folder_omni
+sudo repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
 sudo repo sync
 
 Set the following parameters (go to the lineage folder):
@@ -36,4 +42,4 @@ export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL=C && mka adbd recoveryim
 or
 build/envsetup.sh && lunch omni_hi6250-eng && export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL=C && mka adbd recoveryimage
 
-Greetings and good work! IceMan.# android_device_huawei_hi6250_PRA-LX1
+Greetings and good work! IceMan.
